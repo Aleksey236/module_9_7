@@ -1,6 +1,6 @@
 def is_prime(func):
-    def wrapper(*args, **kwargs):
-        value = func(*args, **kwargs)
+    def wrapper(*args):
+        value = func(*args)
         if value > 1:
             if ((value % i != 0) for i in range(2, int(value ** 0.5) + 1)):
                 return "Простое"
